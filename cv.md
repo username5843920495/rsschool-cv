@@ -4,7 +4,7 @@
 + Minsk, Belarus
 + Phone number: +375 25 596 105 59
 + Email: magnusnepredoval@gmail.com
-+ Github: [username5843920495](https//githubcom/username5843920495)
++ Github: [username5843920495](https://github.com/username5843920495)
 ## About me
 
 Im Alpharius.
