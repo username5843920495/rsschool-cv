@@ -1,4 +1,3 @@
-# rs-school cv
 ## Pavel Veselov
 ## Contacts
 + Minsk, Belarus
@@ -13,26 +12,29 @@ Im Alpharius.
 * HTML
 * CSS
 ## Code example
+
 ```
+
 function sleep(time) {
 
-    error='invalid time value'
-    day='rise and shine'
-    night='sleeping time'
+error='invalid time value'
+day='rise and shine'
+night='sleeping time'
  
 if (time >= 6 && time < 22)
-  return day;
+return day;
 
 else if (time <=24 && time >= 0 )
-  return night;
+return night;
     
 else 
-  return error;
+return error;
   
 }
-   console.log(sleep(10));
-      console.log(sleep(-5));
-         console.log(sleep(3));
+console.log(sleep(10));
+console.log(sleep(-5));
+console.log(sleep(3));
+
 ```
 ## Education
 Bachelor, Belarusian State University of Informatics and Radioelectronics
