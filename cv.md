@@ -6,9 +6,7 @@
 + Email: magnusnepredoval@gmail.com
 + Github: [username5843920495](https://github.com/username5843920495)
 ## About me
-
 Im Alpharius.
-
 ## Skills
 * 1C
 * VBA
@@ -35,10 +33,8 @@ else
    console.log(sleep(10));
       console.log(sleep(-5));
          console.log(sleep(3));
-
 ```
 ## Education
-
 Bachelor, Belarusian State University of Informatics and Radioelectronics
 * Automated Data Processing Systems
 ## Languages
