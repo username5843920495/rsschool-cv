@@ -31,13 +31,13 @@
     margin-left: 10%;
   }
 
-  .flex-container > div { 
-    margin: 20px; 
+  .flex-container > div {
+    margin: 20px;
     margin-top: auto;
     margin-bottom: auto;
   }
 
-  code {
+  pre {
     background-color: rgb(255, 178, 34);
     text-align: left;
     display:block;
@@ -53,10 +53,11 @@
 </head>
 
 <main>
+  <header>
   <div class="flex-container">
     <div>
       <img src="./img/orange.svg" alt="avatar" width="200" height="200">
-    </div>  
+    </div>
     <div>
       <nav style="margin-top: 20%">
         <ul>
@@ -65,28 +66,23 @@
           <li><a href="#Education">Education</a></li>
         </ul>
       </nav>
-    </div>  
+    </div>
   </div>
+  </header>
   <section id="Home">
-    <header>
       <h1>Pavel Veselov</h1>
-    </header>
   </section>
-  <header><h2>Contacts</h2></header>
+  <h2>Contacts</h2>
     <ul style="margin-left: 30%;">
       <li>Minsk, Belarus</li>
       <li>Phone number: +375 25 596 105 59</li>
       <li>Email: magnusnepredoval@gmail.com</li>
       <li>Github: username5843920495</li>
-    </ul>
-  <header>
-    <h2>About me</h2>
-  </header>
+    </ul>  
+    <h2>About me</h2>  
   <a style="margin-left: 15%">Hard-working, willing to grow young man.</a>
-  <section id="Skills">
-    <header>
-      <h2>Skills</h2>
-    </header>
+  <section id="Skills">   
+      <h2>Skills</h2>  
   </section>
   <ul style="margin-left: 35%">
     <li>1C</li>
@@ -95,26 +91,28 @@
     <li>HTML</li>
     <li>CSS</li>
   </ul>
-  <header>
-    <h2>Code example</h2>
-    </header>
-    <code>function sleep(time) {</code>
-    <code>error='invalid time value'</code>
-    <code>day='rise and shine'</code>
-    <code>night='sleeping time'</code>
-    <code>if (time &gt;= 6 &amp;&amp; time &lt; 22)</code>
-    <code>return day;</code>
-    <code></code>
-    <code>else if (time &lt;= 24 &amp;&amp; time &gt;= 0)</code>
-    <code>return night;</code>
-    <code></code>
-    <code>else</code>
-    <code>return error;</code>
-    <code>}</code>
-    <code></code>
-    <code>console.log(sleep(10));</code>
-    <code>console.log(sleep(-5));</code>
-    <code>console.log(sleep(3));</code>
+  <h2>Code example</h2>
+    <pre>
+
+      function sleep(time) {
+        error='invalid time value'
+        day='rise and shine'
+        night='sleeping time'
+
+      if (time &gt;= 6 &amp;&amp; time &lt; 22)
+        return day;
+
+      else if (time &lt;= 24 &amp;&amp; time &gt;= 0)
+        return night;
+    
+      else
+        return error;
+      }
+    
+      console.log(sleep(10));
+        console.log(sleep(-5));
+          console.log(sleep(3));
+      </pre>
   <section id="Education">
     <h2>Education</h2>
   </section>
@@ -128,14 +126,15 @@
     <li>English B2</li>
     <li>Belarussian</li>
   </ul>
-  <footer>
+<footer>
   <div class="flex-container">
     <div>
       <a href="https://github.com/username5843920495">My GitHub, 2025</a>
     </div>
-    <div><a href="https://rs.school/courses/javascript-ru"><img style="margin-left: 20%" src="./img/rs-school-logo.svg" alt="school-logo" width="80" height="70"></a>
+    <div>
+      <a href="https://rs.school/courses/javascript-ru"><img style="margin-left: 20%" src="./img/rs-school-logo.svg" alt="school-logo" width="80" height="70"></a>
     </div>
   </div>
-  </footer>
+</footer>
 </main>
 </html>
