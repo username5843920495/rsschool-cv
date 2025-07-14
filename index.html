@@ -16,9 +16,16 @@ h1   {color: rgb(244, 244, 244);
      text-align: center;}
 h2   {color: rgb(244, 244, 244);
   text-align: center;}
-nav {
-   text-align: center;
-  }
+.flex-container {
+    display: flex;
+    flex-direction: row;
+  margin-left: 10%;
+   }
+.flex-container > div { 
+ margin: 20px; 
+  margin-top: auto;
+  margin-bottom: auto;
+}
 code {
   background-color: rgb(255, 178, 34);
   text-align: left;
@@ -28,16 +35,22 @@ code {
   }
 footer{
   font-size: 120%;
-  margin-left: 40%;}
+  }
 </style>
 </head>
 <main>
-<nav>
-<a><img src="./img/orange.svg" alt="avatar" width="200" height="200"></a>
+<div class="flex-container">
+<div>
+    <img src="./img/orange.svg" alt="avatar" width="200" height="200">
+  </div>  
+  <div>
+   <nav style="margin-top: 20%">
   <p><a href="#Home">Home</a></p>
   <p><a href="#Skills">Skills</a></p>
   <p><a href="#Education">Education</a></p>
 </nav>
+  </div>  
+</div>
 <section id="Home">
 <header>
 <h1>Pavel Veselov</h1>
@@ -93,15 +106,19 @@ footer{
 <ul>
   <li>Automated Data Processing Systems</li>
 </ul>
- <h2>Languages</h2>
- <ul style="margin-left: 30%">
+ <h2>Lanugages</h2>
+<ul style="margin-left: 30%">
   <li>Russian</li>
   <li>English B2</li>
   <li>Belarussian</li>
 </ul>
 <footer>
-<a href="https://github.com/username5843920495">My GitHub, 2025</a>
-<a href="https://rs.school/courses/javascript-ru"><img style="margin-left: 20%" src="./img/rs-school-logo.svg" alt="school-logo" width="80" height="70"></a>
+  <div class="flex-container">
+<div>
+    <a href="https://github.com/username5843920495">My GitHub, 2025</a>
+  </div>
+<div><a href="https://rs.school/courses/javascript-ru"><img style="margin-left: 20%" src="./img/rs-school-logo.svg" alt="school-logo" width="80" height="70"></a></div>
+</div>
 </footer>
 </main>
 </html>
