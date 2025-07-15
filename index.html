@@ -5,21 +5,38 @@
       <title>CV#3</title>
 <style>
   body {
-    position: relative;
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
     background-color: rgb(184, 184, 184);
-    height: 100%;
+    width: 80%;
+    min-height: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  main {
-    top: 5%;
+  nav {
+    margin-right: 200px;
+  }
+
+  footer {
+    margin-right: 100px;
   }
 
   h1 {
     color: rgb(244, 244, 244);
     font-size: 180%;
     text-align: center;
+  }
+
+  div.container {
+    text-align: center;
+  }
+
+  ul.pretty {
+    display: inline-block;
+    text-align: left;
   }
 
   h2 {
@@ -40,31 +57,22 @@
   }
 
   pre {
-    background-color: rgb(255, 178, 34);
-    text-align: left;
+    background-color: rgb(255, 178, 34);   
     display:block;
     padding: 5px;
     font-size: 120%;
-  }
-  
-  footer {
-    position: absolute;
-    bottom: -7%;
-     font-size: 120%;
-     margin-left: -4%;
+    text-align: left;
   }
 
 </style>
 </head>
-
-<main>
-  <header>
+<header>
   <div class="flex-container">
     <div>
       <img src="./img/orange.svg" alt="avatar" width="200" height="200">
     </div>
     <div>
-      <nav style="margin-top: 20%">
+      <nav style="margin-top: 10%">
         <ul style="line-height: 3; list-style-type: none;">
           <li><a href="#Home">Home</a></li>
           <li><a href="#Skills">Skills</a></li>
@@ -73,29 +81,34 @@
       </nav>
     </div>
   </div>
-  </header>
+</header>
+<main>
   <section id="Home">
       <h1>Pavel Veselov</h1>
   </section>
   <h2>Contacts</h2>
-    <ul style="margin-left: 30%;">
+  <div class="container">
+    <ul class="pretty" style="list-style-type: none;">
       <li>Minsk, Belarus</li>
       <li>Phone number: +375 25 596 105 59</li>
       <li>Email: magnusnepredoval@gmail.com</li>
       <li>Github: username5843920495</li>
     </ul>
-    <h2>About me</h2>
-  <a style="margin-left: 15%">Hard-working, willing to grow young man.</a>
-  <section id="Skills">
-      <h2>Skills</h2>
+  </div>
+  <h2>About me</h2>
+  <p style="text-align: center;">Hard-working, willing to grow young man.</p>
+  <section id="Skills">    
+    <h2>Skills</h2>
   </section>
-  <ul style="margin-left: 35%">
-    <li>1C</li>
-    <li>MS SQL</li>
-    <li>VBA</li>
-    <li>HTML</li>
-    <li>CSS</li>
-  </ul>
+  <div class="container">
+    <ul class="pretty">
+      <li>1C</li>
+      <li>MS SQL</li>
+      <li>VBA</li>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+  </div>
   <h2>Code example</h2>
     <pre>
 
@@ -109,11 +122,11 @@
 
       else if (time &lt;= 24 &amp;&amp; time &gt;= 0)
         return night;
-    
+
       else
         return error;
       }
-    
+
       console.log(sleep(10));
         console.log(sleep(-5));
           console.log(sleep(3));
@@ -121,16 +134,17 @@
   <section id="Education">
     <h2>Education</h2>
   </section>
-  <a>Bachelor, Belarusian State University of Informatics and Radioelectronics</a>
-  <ul>
-    <li>Automated Data Processing Systems</li>
-  </ul>
+    <a>Bachelor, Belarusian State University of Informatics and Radioelectronics</a>
+    <p>Automated Data Processing Systems</p>
+
   <h2>Lanugages</h2>
-  <ul style="margin-left: 30%">
-    <li>Russian</li>
-    <li>English B2</li>
-    <li>Belarussian</li>
-  </ul>
+  <div class="container">
+    <ul class="pretty">
+      <li>Russian</li>
+      <li>English B2</li>
+      <li>Belarussian</li>
+    </ul>
+  </div>
 </main>
 <footer>
   <div class="flex-container">
@@ -138,9 +152,9 @@
       <a href="https://github.com/username5843920495"><img src="./img/git-logo.png" alt="school-logo" width="80" height="70"></a>
     </div>
     <div>
-      <a href="https://rs.school/courses/javascript-ru"><img style="margin-left: 20%" src="./img/rs-school-logo.svg" alt="school-logo" width="80" height="70"></a>
+      <a href="https://rs.school/courses/javascript-ru"><img src="./img/rs-school-logo.svg" alt="school-logo" width="80" height="70"></a>
     </div>
-    <div><a style="font-size: 150%; margin-left: 40%;">2025</a></div>
+    <div><a style="font-size: 150%;">2025</a></div>
   </div>
 </footer>
 </html>
